@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context="com.example.asus.edittext.MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#00ffffff"
+        android:src="@drawable/ic_person_pin_circle_black_24dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        android:textColor="#ffffff"
+        android:textColorHint="#747474"
+        android:drawableEnd="@drawable/ic_account_circle_black_24dp"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputTypeHint="textPassword"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:textColorHint="#747474"
+        android:drawableEnd="@drawable/ic_visibility_24dp"
+
+        />
+
+    <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_mail_24dp"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            android:textColor="#ffffff"
+            android:textColorHint="#747474" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Phone"
+                android:textColor="#ffffff"
+                android:drawableStart="@drawable/ic_phone_24dp"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Zip"
+                android:textColor="#ffffff"
+                android:drawableStart="@drawable/ic_zip_24dp"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:text="Female" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=""
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Newsletter Subscription"
+            android:buttonTint="#ffffff"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow Email form others"
+            android:buttonTint="#ffffff"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
